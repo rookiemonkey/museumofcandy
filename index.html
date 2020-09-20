@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="\scss\custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f5d315bff2.js" crossorigin="anonymous"></script>
     <script>
         // practice of on-scroll bg change for nav bar but both are not working
@@ -25,7 +27,7 @@
 
         // after researching, this one worked using the pageYOffset and if statements
         var navbar = document.getElementById('navigation');
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function () { myFunction() };
 
         function myFunction() {
             if (window.pageYOffset > 62) {
@@ -37,12 +39,14 @@
     </script>
     <title>Museum of Candy</title>
 </head>
+
 <body id="bodyCustomized">
     <nav class="navbar navbar-expand-sm px-5 fixed-top" id="navigationBar">
         <!--navbar logo-->
         <a href="#" class="navbar-brand"><strong>CANDY <i class="fas fa-candy-cane"></i></strong></a>
         <!--navbar hamburger-->
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation"
+            aria-expanded="false">
             <i class="fas fa-bars"></i>
         </button>
         <!--navbar options-->
@@ -76,7 +80,7 @@
                 <img class="img-fluid" src="\images\hand2.png" alt="hand holding a donut">
             </div>
         </div>
-    </header> --> 
+    </header> -->
     <header class="row align-items-center">
         <div class="col-lg-6">
             <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
@@ -90,7 +94,7 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid" src="/images/hand2.png" alt="">
+            <img class="img-fluid" src="assets/images/hand.png" alt="" id="img">
         </div>
     </header>
 
@@ -135,17 +139,25 @@
         </article>
     </section> -->
 
-    <article class="row align-items-center content"> <!--class row here-->
-        <div class="col-md-6 order-2 order-md-1"> <!-- breakpoint here-->
-            <img src="images/milk.png" alt="" class="img-fluid">
+    <article class="row align-items-center content">
+        <!--class row here-->
+        <div class="col-md-6 order-2 order-md-1">
+            <!-- breakpoint here-->
+            <img src="/assets/images/milk.png" alt="" class="img-fluid" id="img">
         </div>
-        <div class="col-md-6 text-center order-1 order-md-2"> <!-- breakpoint here-->
-            <div class="row justify-content-center"> <!--class row again here-->
-                <div class="col-10 col-lg-8 blurb mb-5 my-sm-5"> <!-- breakpoint again here-->
+        <div class="col-md-6 text-center order-1 order-md-2">
+            <!-- breakpoint here-->
+            <div class="row justify-content-center">
+                <!--class row again here-->
+                <div class="col-10 col-lg-8 blurb mb-5 my-sm-5">
+                    <!-- breakpoint again here-->
                     <h2>MUSEUM OF CANDY</h2>
-                    <img src="/images/candy.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
+                    <img src="/assets/images/candy.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex deserunt debitis eaque ratione! Nobis, quidem assumenda.</p>
+                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa,
+                        deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum
+                        delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex deserunt debitis eaque
+                        ratione! Nobis, quidem assumenda.</p>
                 </div>
             </div>
         </div>
@@ -155,33 +167,46 @@
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-8 blurb mb-5 my-sm-5">
                     <h2>MUSEUM OF CANDY</h2>
-                    <img src="/images/cottoncandy.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
+                    <img src="/assets/images/cottoncandy.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex deserunt debitis eaque ratione! Nobis, quidem assumenda.</p>
+                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa,
+                        deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum
+                        delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex deserunt debitis eaque
+                        ratione! Nobis, quidem assumenda.</p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="images/gumball.png" alt="" class="img-fluid">
+            <img src="assets/images/gumball.png" alt="" class="img-fluid" id="img">
         </div>
     </article>
     <article class="row align-items-center content">
         <div class="col-md-6 order-2 order-md-1">
-            <img src="images/sprinkles.png" alt="" class="img-fluid">
+            <img src="assets/images/sprinkles.png" alt="" class="img-fluid" id="img">
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
             <div class="row justify-content-center">
                 <div class="col-10 col-lg-8 blurb mb-5 my-sm-5">
                     <h2>MUSEUM OF CANDY</h2>
-                    <img src="/images/lollipop.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
+                    <img src="assets/images/lollipop.png" alt="" class="d-none d-lg-inline" id="decorativeImage">
                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnamautem nam ex deserunt debitis eaque ratione! Nobis, quidem assumenda.</p>
+                        beatae, maiores deserunt in voluptatibus aspernatur architecto excepturi delectus soluta? Ipsa,
+                        deleniti dolorem hic consequatur repellat eveniet quidem voluptate necessitatibus dolorum
+                        delectus minus vitae, ut, veritatis sint ipsum magnamautem nam ex deserunt debitis eaque
+                        ratione! Nobis, quidem assumenda.</p>
                 </div>
             </div>
         </div>
     </article>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
 </html>
