@@ -45,7 +45,7 @@ const dist_js = `./dist/assets/js'`;
  *  *3rd - extenstion of the output file
  */
 const assets = [
-    [`${dist_assets}/css/custom.css`, '/style', 'css'],
+    [`${dist_assets}/css/custom.css`, '/custom', 'css'],
     [`./index.html`, 'index', 'html']
 ]
 
