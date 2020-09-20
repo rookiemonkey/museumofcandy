@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass scss/custom.scss css/custom.css",
-    "sass-min": "node-sass scss/custom.scss css/custom.css --output-style compressed"
+    "sass-min": "node-sass scss/custom.scss css/custom.css --output-style compressed",
+    "minify": "node minify.js"
   },
   "repository": {
     "type": "git",

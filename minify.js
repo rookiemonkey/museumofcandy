@@ -6,7 +6,7 @@ const minify = require('minify');
  *  @STEP1 
  *  DEFINE ROOT DIR FOR ASSETS
  */
-const dist_assets = "./public";
+const dist_assets = "./assets";
 
 
 
@@ -33,9 +33,9 @@ const dist_assets = "./public";
 
 
 // TARGET DESTINATION
-const dist_html = './';
-const dist_css = `${dist_assets}/css`;
-const dist_js = `${dist_assets}/js'`;
+const dist_html = './dist/';
+const dist_css = `./dist/assets/css`;
+const dist_js = `./dist/assets/js'`;
 
 /**
  * !JAVASCRIPT CSS HTML
@@ -45,10 +45,9 @@ const dist_js = `${dist_assets}/js'`;
  *  *3rd - extenstion of the output file
  */
 const assets = [
-    [`${dist_assets}/css/style.css`, '/style.min', 'css']
-
-
-
+    [`${dist_assets}/css/custom.css`, '/style', 'css'],
+    [`./index.html`, 'index', 'html']
+]
 
 
 
